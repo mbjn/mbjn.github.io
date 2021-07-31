@@ -1,0 +1,152 @@
+.tab-group{
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+}
+.tab{
+  color: blue;
+  flex-grow: 1;
+  padding:5px;
+  list-style:none;
+  border:solid 1px #CCC;
+  text-align:center;
+  cursor:pointer;
+  font-weight: bold;
+}
+.panel-group{
+  display: flex;
+  height:100px;
+  height: 600px;
+  border:solid 1px #CCC;
+  border-top:none;
+  /* background:#eee; */
+  background-color: rgb(236, 235, 236);
+  justify-content: center;
+
+
+}
+.panel{
+  display:none;
+  width: 90%;
+  height: 600px;
+}
+
+.panel tab-col{
+
+  display: flex;
+}
+
+.rome {
+  
+  display: flex;
+  background-color:ghostwhite;
+  justify-content: center;
+}
+
+.chips {
+  display: grid;
+  grid-template-columns: repeat(3,80px) ;
+  gap: 5px;
+  justify-content: center;
+  padding: 0;
+
+}
+.sque {
+  width: 80px;
+  height: 80px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  object-fit: cover;
+
+}
+.sque img {
+  object-fit: cover;
+  width: 80px;
+  height: 80px;
+}
+
+.panel tab-ano {
+  display: flex;
+  justify-content: center;  
+  width: 100%;
+  height: 100%;
+}
+
+.screen {
+  width: 100%;
+  height: 50%;
+  margin-bottom: 32px;
+  background-color: deepskyblue;
+  object-fit: cover;
+}
+.screen >img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.desc {
+  width: 90%;
+  height: 120px;
+  /* background-color:darksalmon;  */
+  margin: 4px auto;
+ 
+}
+.img {
+  object-fit: cover;
+}
+
+.pac {
+  display: flex;
+  width: 90%;
+  /* background-color: greenyellow; */
+  justify-content: space-between;
+  text-align: center;
+  margin: 0 auto;
+  padding-left: 20px;
+  padding-right: 20px;
+
+}
+
+
+#btn1 {
+  width: 120px;
+  height: 30px;
+  border-radius: 10%;
+  margin: 4px;
+}
+
+#btn2  {
+  margin: 4px;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: rgb(45, 120, 170);
+  border: none;
+  cursor: pointer;
+  color: white;
+  font: bold;
+
+}
+
+footer > p {
+  font-size: 6px;
+  color: #CCC ;
+  text-align: center;
+
+}
+
+.tab.is-active{
+  background:#F000;
+  color:darkorange;
+  transition: all 0.2s ease-out;
+}
+.panel.is-show{
+  display:block;
+  justify-content: center;
+}
+
+
+

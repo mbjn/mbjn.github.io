@@ -4,117 +4,103 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>サチ子の水彩画展</title>
-<link rel="stylesheet" href="css/stylesheet.css">
+  <title>re作品展</title>
+  <link rel="stylesheet" href="css/styles.css" >
 </head>
 <body>
-  <ul id="space1"></ul>
-
-  <section  class="space1  dissapear" >
-    <ul >
-      <li>
-        <img  src="img/sachiko.jpg">       
-      </li>
-      <button>X</button>
+  <h1>wellcome!!</h1>
+  <div class="tab-panel">
+    <!--タブ-->
+    <ul class="tab-group">
+      <li class="tab tab-col is-active">Collection</li>
+      <li class="tab tab-ano">Another</li>
+      <li class="tab tab-gre">Greeting</li>
     </ul>
     
+    <!--タブを切り替えて表示するコンテンツ-->
+      <div class="panel-group">
+      
+       <div class="panel tab-col is-show">
+       <p>Sachiko's WaterColler Collection</p>
+        <div class="rome">
+          <ul class ="chips">
+            <li class="sque"><img src="img/s1.jpg" alt=""></li>
+            <li class="sque"><img src="img/s2.jpg" alt=""></li>
+            <li class="sque"><img src="img/s3.jpg" alt=""></li>
+            <li class="sque"><img src="img/s4.jpg" alt=""></li>
+            <li class="sque"><img src="img/s5.jpg" alt=""></li>
+            <li class="sque"><img src="img/s6.jpg" alt=""></li>
+            <li class="sque"><img src="img/s7.jpg" alt=""></li>
+            <li class="sque"><img src="img/s8.jpg" alt=""></li>
+            <li class="sque"><img src="img/s9.jpg" alt=""></li>
+            <li class="sque"><img src="img/s10.jpg" alt=""></li>
+            <li class="sque"><img src="img/s11.jpg" alt=""></li>
+            <li class="sque"><img src="img/s12.jpg" alt=""></li>
+            
+           
+            <!-- <li class="sque"><img src="http://placehold.jp/70x70.png" alt=""></li> -->
+          </ul>
 
-  </section>
-<div class = "space2">
-  <h1>wellcome!!!</h1>
-  <P>サチ子の水彩画展</P>
-  <div class="containe">
-    <ul class="menu"> 
-      <li> <a href="#" class="active" data-id="col" >Collection</a></li>
-      <li> <a href="#" data-id="ano">Another</a></li>
-      <li> <a href="#" data-id="gre">Greeting</a></li>
-    </ul>
+        </div>
+
+        <footer> 
+          <p>
+            Copyright &copy; 2021-2022 Miya All Right Reserved   
+          </p>
+        </footer>
+       </div>
     
-    <section class="content active" id="col"> 
-      <p>Sachiko's Watercoller Painting Collection</p>
-      <ul class="works">
-
-        <li><img  id="first" src="img/first.jpg"></li>
-        <li><img src="img/sachiko.jpg" ></li>
-        <li><img  ></li>
-        <li><img  ></li>
-        <li><img  ></li>
-        <li><img  ></li>
-        <li><img  ></li>
-        <li><img  ></li>
-        <li><img  ></li>
-        <li><img  ></li>
-        <li><img  ></li>
-        <li><img  ></li>
-        <li><img  ></li>
+      <div class="panel tab-ano">
+        <p>  Inpressed Another Work</p>
+        <div class="screen" ><img src="img/m1.jpg" alt=""></div>
+        <div class="desc">こちらは先日訪れました<a href="http://www.eonet.ne.jp/~adoruk/masago/#anchor_kkonsyu"> 第６回マサゴ画廊のガクラフト展</a> で出会った作品です。総計約３００点、中でも不思議な魅力で特別惹かれる一枚でした。</div>
         
-        <!-- <li><img src="http://placehold.jp/70x70.png"></li> -->
-      </ul>
-      <!-- <p>Please click!! Anyone!!</p> -->
-      <footer> 
-        <p>
-          &copy;Copyright 2021 Miya All Right Reserved   
-        </p>
-      </footer>
-    </section>
-    
-    <section class="content " id="ano">
-      <p> Inpressed works of other people </p>
-    <div class="panel">
-      <div class="panel-1">
-        <img src="img/mari.jpg">
+        <div class="pac">        
+          <!-- <button id="btn1">start</button> -->
+          <button id="btn2">1</button>
+          <button id="btn2">2</button>
+          <button id="btn2">3</button>
+          <button id="btn2">4</button>
+          <button id="btn2">5</button>
+          <button id="btn2">6</button>
+          <button id="btn2">7</button>
+        </div>
+        
+        <footer> 
+          <p>
+            Copyright &copy; 2021-2022 Miya All Right Reserved   
+          </p>
+        </footer>
       </div>
 
-      <div class="panel-2">
-          <div class="presen" ><p>ここに上の絵の説明が入ります。こに上の絵の説明が入ります。こに上の絵の説明が入ります。こに上の絵の説明が入ります。こに上の絵の説明が入ります。こに上の絵の説明が入ります。</p></div>
-      </div>  
-      
-          <div class="panel-3">
-            <nav class="ano-nav">
-              <button></button>
-              <button></button>
-              <button></button>
-             
-            </nav>
-          </div>      
+
+
+
+      <div class="panel tab-gre">
+        <div>
+          <p>Greeting </p>
+          <h2>ご挨拶</h2>
+          <p>本日はサチ子の水彩画展へお越しいただき誠にありがとうございます。私は長年水彩画を描いております。思いがけずこのサイトが開設され、コロナで中止された年２回の作品展の代わりに、皆様へ向けて水彩画を発表する場となりました。これからも楽しく水彩画を描き続けたいと思います。今度お会いした際に、ぜひ感想をお聞かせくださいませ。
+        </p>    
+         <P> ｀Collction｀ページには私の作品１２点を気ままに選定して全て正方形で表示しています。実際の作品は長方形なので展示されていないところがあります。お手元で拡大し筆の運びや水彩画ならではの透明感ある色の重なりをお楽しみください。｀Another｀ページには友人や師匠や街で出会った他の作家さんの作品を掲示しています。</P>
+         <p>展示内容も見せ方も徐々に変化させていく予定です。
+          どうぞまたお越しください。</p>
         </div>
-      
-      
-      <footer> 
-        <p>
-          &copy;Copyright 2021 Miya All Right Reserved   
-        </p>
-      </footer>
-    </section>
-    
-    <section class="content " id="gre">
-    <div class="panel">
-      <div class="panel-1">
-       <p>
-        <br>
-        <span> ご挨拶</span> 
-        <br>
-        <br>
-        ここにはご挨拶文が入ります。ここにはご挨拶文が入ります。ここにはご挨拶文が入ります。ここにはご挨拶文が入ります。ここにはご挨拶文が入ります。ここにはご挨拶文が入ります。ここにはご挨拶文が入ります。ここにはご挨拶文が入ります。ここにはご挨拶文が入ります。ここにはご挨拶文が入ります。ここにはご挨拶文が入ります。ここにはご挨拶文が入ります。ここにはご挨拶文が入ります。ここにはご挨拶文が入ります。
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-      </p>
-      
-      <footer> 
-        <p>
-          &copy;Copyright 2021 Miya All Right Reserved   
-        </p>
-      </footer>
-    </div>   
+
+        <footer> 
+          <p>
+            Copyright &copy; 2021-2022 Miya All Right Reserved   
+          </p>
+        </footer>
+      </div>
     </div>
-    </section>
-    
   </div>
 
-</div>
-<script src="js/main.js"></script>
+
+
+
+
+
+<script src="js/main.js"></script> 
 </body>
 </html>
