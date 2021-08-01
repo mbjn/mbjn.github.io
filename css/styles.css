@@ -38,7 +38,6 @@
 }
 
 .rome {
-  
   display: flex;
   background-color:ghostwhite;
   justify-content: center;
@@ -110,15 +109,7 @@
 
 }
 
-
-#btn1 {
-  width: 120px;
-  height: 30px;
-  border-radius: 10%;
-  margin: 4px;
-}
-
-#btn2  {
+.pac > button  {
   margin: 4px;
   width: 40px;
   height: 40px;
@@ -132,9 +123,10 @@
 }
 
 footer > p {
-  font-size: 6px;
-  color: #CCC ;
+  font-size: 8px;
+  color: rgb(173, 171, 171) ;
   text-align: center;
+  margin-top: 16px;
 
 }
 
@@ -149,4 +141,55 @@ footer > p {
 }
 
 
+@media (min-width: 800px){
+  .panel-group {
+    height: 1200px;
+  }
+  .panel {
+    height: 1200px;
+  }
 
+
+  .chips {
+    display: grid;
+    grid-template-columns: repeat(4,180px) ;
+    gap: 32px;
+    justify-content: center;
+    padding: 0;
+   margin-top: 32px;
+   margin-bottom: 32px;
+  }
+  .sque {
+    width: 180px;
+    height: 180px;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    object-fit: cover;
+  
+  }
+  .sque img {
+    object-fit: cover;
+    width: 180px;
+    height: 180px;
+  }
+
+  .screen {
+    width: 80%;
+    height: 50%;
+    margin-bottom: 32px;
+    background-color: deepskyblue;
+    object-fit: cover;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  .desc {
+    width: 80%;
+  }
+
+  .tab-gre > P {
+ font-size: 36px;
+  }
+
+}
