@@ -162,7 +162,6 @@ footer > p {
     height: 1200px;
   }
 
-
   .chips {
     display: grid;
     grid-template-columns: repeat(4,180px) ;
@@ -189,9 +188,62 @@ footer > p {
 
   .screen {
     width: 80%;
-    height: 50%;
+    height: 60%;
     margin-bottom: 32px;
-    background-color: deepskyblue;
+    object-fit: cover;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  .desc {
+    width: 80%;
+  }
+
+  .tab-gre > P {
+ font-size: 48px;
+  }
+
+}
+
+
+
+@media (min-width: 900px){
+
+  .panel-group {
+    height: 1200px;
+  }
+  .panel {
+    height: 1200px;
+  }
+
+  .chips {
+    display: grid;
+    grid-template-columns: repeat(4,200px) ;
+    gap: 32px;
+    justify-content: center;
+    padding: 0;
+   margin-top: 32px;
+   margin-bottom: 32px;
+  }
+  .sque {
+    width: 200px;
+    height: 200px;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    object-fit: cover;
+  
+  }
+  .sque img {
+    object-fit: cover;
+    width: 200px;
+    height: 200px;
+  }
+
+  .screen {
+    width: 80%;
+    height: 55%;
+    margin-bottom: 32px;
     object-fit: cover;
     margin-left: auto;
     margin-right: auto;
@@ -205,4 +257,7 @@ footer > p {
  font-size: 36px;
   }
 
+  #sign{
+    font-size: 20px;
+  }
 }
