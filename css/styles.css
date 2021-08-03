@@ -1,3 +1,15 @@
+.end {
+  display: flex;
+}
+
+#sign {
+
+  font-family:' Dawning of a New Day', cursive;
+  margin-left: auto;
+  margin-right: 60px;
+  font-size: 24px;
+}
+
 .tab-group{
   margin: 0;
   padding: 0;
@@ -26,6 +38,7 @@
 
 
 }
+
 .panel{
   display:none;
   width: 90%;
