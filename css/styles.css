@@ -242,7 +242,7 @@ footer > p {
 
   .screen {
     width: 80%;
-    height: 55%;
+    height: 60%;
     margin-bottom: 32px;
     object-fit: cover;
     margin-left: auto;
@@ -254,6 +254,7 @@ footer > p {
   }
 
   .tab-gre > P {
+ width: 60%;   
  font-size: 36px;
   }
 
