@@ -1,13 +1,27 @@
-.end {
-  display: flex;
-  display: none;
+body {
+  /* font-family: "Hiragino Kaku Gothic Pro", "ヒラギノ角ゴ Pro", "Yu Gothic Medium", "游ゴシック Medium", YuGothic, "游ゴシック体", "メイリオ", sans-serif; */
+
+  font-family: 'Lato', 'Noto Sans JP', 'ヒラギノ角ゴ ProN', 'Hiragino Kaku Gothic ProN', 'メイリオ', Meiryo, 'ＭＳ Ｐゴシック', 'MS PGothic', sans-serif;
+}
+
+h1 {
+  text-shadow: 10px 10px 5px rgb(45, 120, 170);
+
+}
+
+#day {
+margin-top: 0px;
+padding-left: 200px;
+
+  
 }
 
 #sign {
   font-family:' Dawning of a New Day', cursive;
-  margin-left: auto;
-  margin-right: 60px;
   font-size: 24px;
+  padding-left:150px;
+  margin-right: 5px;
+ justify-content: right;
 }
 
 .tab-group{
