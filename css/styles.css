@@ -6,22 +6,6 @@ body {
 
 h1 {
   text-shadow: 10px 10px 5px rgb(45, 120, 170);
-
-}
-
-#day {
-margin-top: 0px;
-padding-left: 200px;
-
-  
-}
-
-#sign {
-  font-family:' Dawning of a New Day', cursive;
-  font-size: 18px;
-  padding-left:150px;
-  margin-right: 5px;
- justify-content: right;
 }
 
 .tab-group{
@@ -30,7 +14,7 @@ padding-left: 200px;
   display: flex;
   justify-content: center;
 }
-.tab{
+.tab {
   color: blue;
   flex-grow: 1;
   padding:5px;
@@ -49,39 +33,38 @@ padding-left: 200px;
   /* background:#eee; */
   background-color: rgb(236, 235, 236);
   justify-content: center;
-
-
+  overflow-wrap: scroll;
 }
-
-.panel{
+.panel {
   display:none;
   width: 90%;
   height: 600px;
+  overflow: scroll;
 }
 
-.panel tab-gre {
-  height: 600px;
+.panel tab-group {
+  display: flex;
+  justify-content: center;  
+  width: 90%;
+  height: 100%;
+  align-items: center;
+ 
 }
 
-
-.panel tab-col{
-
+.panel tab-col {
   display: flex;
 }
-
 .rome {
   display: flex;
   background-color:ghostwhite;
   justify-content: center;
 }
-
 .chips {
   display: grid;
   grid-template-columns: repeat(3,80px) ;
-  gap: 5px;
+  gap: 8px;
   justify-content: center;
   padding: 0;
-
 }
 .sque {
   width: 80px;
@@ -90,7 +73,6 @@ padding-left: 200px;
   padding: 0;
   list-style: none;
   object-fit: cover;
-
 }
 .sque img {
   object-fit: cover;
@@ -103,12 +85,15 @@ padding-left: 200px;
   justify-content: center;  
   width: 100%;
   height: 100%;
+  align-items: center;
 }
-
 .screen {
-  width: 100%;
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+  width: 90%;
   height: 50%;
-  margin-bottom: 32px;
+  margin-bottom: 10px;
   background-color: deepskyblue;
   object-fit: cover;
 }
@@ -117,15 +102,62 @@ padding-left: 200px;
   height: 100%;
   object-fit: cover;
 }
-
 .desc {
   width: 90%;
-  height: 120px;
+  height: 250px;
   /* background-color:darksalmon;  */
   margin: 4px auto;
- 
+ overflow-y: scroll;
 }
+.test {
+  width: 200px;
+  height: 200px;
+  background-color: rgb(224, 176, 117);
+  margin: 20px;
+  margin-left: auto;
+  margin-right: auto;
+  box-shadow: 0 0 40px rgb(19, 34, 172);
+}
+.test > img {
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+}
+
+.m3snap{
+  margin-top: 40px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 200px;
+  height: 180px;
+}
+.m3snap >img {
+  width: 200px;
+  height: 180px;
+  object-fit: cover;
+}
+
+.m4snap {
+  margin-top: 30px;
+  margin-bottom:20px ;
+  margin-left: auto;
+  margin-right: auto;
+ 
+  width:200px ;
+  height: 150px;
+  box-shadow: 0 0 30px olivedrab;
+}
+.m4snap > img {
+  width:200px ;
+  height: 150px;
+  object-fit: cover;
+}
+
 .img {
+  object-fit: cover;
+}
+img-x {
+  width: 90%;
   object-fit: cover;
 }
 
@@ -135,32 +167,74 @@ padding-left: 200px;
   /* background-color: greenyellow; */
   justify-content: space-between;
   text-align: center;
-  margin: 0 auto;
-  padding-left: 20px;
-  padding-right: 20px;
-
+  margin-top: 10px;
+  margin-bottom: 10px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0px;
 }
-
 .pac > button  {
   margin: 4px;
-  width: 40px;
-  height: 40px;
+  width: 20px;
+  height: 20px;
   border-radius: 50%;
-  background-color: rgb(45, 120, 170);
-  border: none;
+  background-color:rgb(50, 158, 207);
+  border: 2px solid rgb(80, 56, 3) ;
   cursor: pointer;
   color: white;
   font: bold;
+  font-size: 10px;
+  box-shadow:  5px 5px 10px rgb(22, 40, 53);
+  
+}
 
+ .anofoot {
+  /* position: fixed;
+  bottom: 0; */
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+}
+.anofoot-p {
+  margin: 0 auto; 
+} 
+
+.show {
+  display: none;  
+}
+.active{
+  display: block;
+}
+
+
+.gre-content {
+  width: 90%;
+  overflow: scroll;
+  margin-top: 0;
+  margin-left: auto;
+  margin-right: auto;
+}
+#decla{
+  margin: 0;
+}
+
+
+#day {
+  text-align: right;
+}
+#sign {
+margin-left: 30px;
+margin-right: 20px;
 }
 
 footer > p {
   font-size: 8px;
   color: rgb(173, 171, 171) ;
   text-align: center;
-  margin-top: 16px;
-
+  margin-top: 16px,16px,auto;
 }
+
+
 
 .tab.is-active{
   background:#F000;
@@ -271,7 +345,57 @@ footer > p {
   .desc {
     width: 80%;
   }
-
+  .desc {
+    width: 90%;
+    height: 400px;
+    /* background-color:darksalmon;  */
+    margin: 4px auto;
+   overflow-y: scroll;
+  }
+  .test {
+    width: 400px;
+    height: 400px;
+    background-color: rgb(224, 176, 117);
+    margin: 40px;
+    margin-left: auto;
+    margin-right: auto;
+    box-shadow: 0 0 80px rgb(19, 34, 172);
+  }
+  .test > img {
+    width: 400px;
+    height: 400px;
+    object-fit: cover;
+  }
+  
+  .m3snap{
+    margin-top: 60px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 400px;
+    height: 360px;
+  }
+  .m3snap >img {
+    width: 400px;
+    height: 360px;
+    object-fit: cover;
+  }
+  
+  .m4snap {
+    margin-top: 60px;
+    margin-bottom:40px ;
+    margin-left: auto;
+    margin-right: auto;
+   
+    width:400px ;
+    height: 300px;
+    box-shadow: 0 0 30px olivedrab;
+  }
+  .m4snap > img {
+    width:400px ;
+    height: 300px;
+    object-fit: cover;
+  }
+  
   .tab-gre > P {
  width: 60%;   
  font-size: 36px;
