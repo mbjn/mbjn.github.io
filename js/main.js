@@ -55,7 +55,8 @@ btns.forEach( (btn,index) => {
   btn.addEventListener( 'click', e => {
     e.preventDefault;
     
-    x0.setAttribute('src', imgs[i]);
+    x0.src = imgs[i];
+    // x0.setAttribute('src', imgs[i]);
     
     const shows = document.querySelectorAll('.show');
     shows.forEach(show  => {
