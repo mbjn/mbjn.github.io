@@ -13,6 +13,12 @@ main {
   margin-right: auto;
 }
 
+p {
+  padding: 10px;
+  padding-top: 0;
+
+}
+
 footer {
   padding: 0;
   padding-bottom: 10px;
@@ -127,8 +133,7 @@ nav > li {
 }
  
 #ivent{
-  height: 95%;
-  
+  height: 95%; 
   justify-content: center;
 }
 
@@ -215,6 +220,11 @@ img {
 
 }
 
+#decla {
+  margin-top: 0;
+  margin-bottom: 0;
+  padding: 0;
+}
 
 #day {
   display: flex;
