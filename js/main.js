@@ -1,8 +1,6 @@
-'use strict'
-
+'use script'
 {
-
-// タブで画面の切り替え
+  //タブで画面の切り替え
 
   document.addEventListener('DOMContentLoaded', function(){
     // タブにクリックイベントを付加
@@ -49,23 +47,29 @@ const imgs = [
 const x0 = document.getElementById('x0');
 
 btns.forEach( (btn,index) => {
-  const i = index ;
-  console.log(`btn: ${btn.textContent}-${i}`);
   
+  const i = index ;
+  // console.log(`btn: ${btn.textContent}-${i}`);  
   btn.addEventListener( 'click', e => {
-    e.preventDefault;
+    //  --e.preventDefault;
+    document.getElementsByClassName('btn-on')[0].classList.remove('btn-on');
+    btn.classList.add('btn-on');
     
     x0.src = imgs[i];
     // x0.setAttribute('src', imgs[i]);
     
     const shows = document.querySelectorAll('.show');
     shows.forEach(show  => {
-      show.classList.remove('active');
+      show.classList.remove('active');   
     });
     shows[i].classList.add('active');
-
+    btns[i].classList.add('btn-on');
+  
   });
+
 
 });
 
 }
+
+  

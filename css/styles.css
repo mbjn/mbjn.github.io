@@ -1,448 +1,234 @@
-body {
-  /* font-family: "Hiragino Kaku Gothic Pro", "ヒラギノ角ゴ Pro", "Yu Gothic Medium", "游ゴシック Medium", YuGothic, "游ゴシック体", "メイリオ", sans-serif; */
-
-  font-family: 'Lato', 'Noto Sans JP', 'ヒラギノ角ゴ ProN', 'Hiragino Kaku Gothic ProN', 'メイリオ', Meiryo, 'ＭＳ Ｐゴシック', 'MS PGothic', sans-serif;
+/* 携帯サイズ */
+html, body {
+  background-color:rgb(224, 221, 221);
+  width:100%;
+  height:100%;
+}
+/* 土台 */
+main {
+  /* background-color: chartreuse; */
+  width: 95%;
+  height: 100%;
+  margin-left: auto;
+  margin-right: auto;
 }
 
-h1 {
-  text-shadow: 10px 10px 5px rgb(45, 120, 170);
-}
-
-.tab-group{
-  margin: 0;
+footer {
   padding: 0;
-  display: flex;
-  justify-content: center;
+  padding-bottom: 10px;
+
+  font-size: 10px;
+  color: rgb(211, 208, 208);
+  text-align: center;
+  vertical-align: text-top;
 }
-.tab {
-  color: blue;
-  flex-grow: 1;
-  padding:5px;
-  list-style:none;
-  border:solid 1px #CCC;
-  text-align:center;
-  cursor:pointer;
-  font-weight: bold;
+footer > p  {
+  margin-top: 0;
 }
-.panel-group{
+
+/* パネル*/
+nav {
   display: flex;
-  height:100px;
-  height: 650px;
-  border:solid 1px #CCC;
-  border-top:none;
-  /* background:#eee; */
-  background-color: rgb(236, 235, 236);
-  justify-content: center;
-  overflow-wrap: scroll;
+  background-color:rgb(224, 221, 221);
+  
+  width: 90%; 
+  height: 6%;
+  margin-left: auto;
+  margin-right: auto;
+  justify-content: space-between;
+
+ 
 }
 .panel {
   display:none;
+  background-color:whitesmoke;
   width: 90%;
-  height: 600px;
-  overflow: scroll;
+  height:90%;
+  margin-left: auto;
+  margin-right: auto;
 }
 
-.panel tab-group {
-  display: flex;
-  justify-content: center;  
-  width: 90%;
-  height: 100%;
-  align-items: center;
- 
+/* セクション*/
+
+
+
+/* 部品*/
+h2 {
+  margin:8px;
+  text-shadow: 10px 10px 5px rgb(45, 120, 170);
 }
 
-.panel tab-col {
-  display: flex;
-}
-.rome {
-  display: flex;
-  background-color:ghostwhite;
-  justify-content: center;
-}
-.chips {
-  display: grid;
-  grid-template-columns: repeat(3,80px) ;
-  gap: 8px;
-  justify-content: center;
-  padding: 0;
-}
-.sque {
-  width: 80px;
-  height: 80px;
-  margin: 0;
-  padding: 0;
+nav > li {
+  color: royalblue;
   list-style: none;
-  object-fit: cover;
-}
-.sque img {
-  object-fit: cover;
-  width: 80px;
-  height: 80px;
-}
-
-.panel tab-ano {
-  display: flex;
-  justify-content: center;  
-  width: 100%;
-  height: 100%;
-  align-items: center;
-}
-.screen {
-  display: flex;
-  margin-left: auto;
-  margin-right: auto;
-  width: 90%;
-  height: 50%;
-  margin-bottom: 10px;
-  background-color: deepskyblue;
-  object-fit: cover;
-}
-.screen >img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-}
-.desc {
-  width: 90%;
-  height: 250px;
-  /* background-color:darksalmon;  */
-  margin: 4px auto;
- overflow-y: scroll;
-}
-
-#page_top{
-  width: 90px;
-  height: 90px;
-  position: fixed;
-  right: 0;
-  bottom: 0;
-  opacity: 0.6;
-}
-#page_top a{
-  position: relative;
-  display: block;
-  width: 90px;
-  height: 90px;
-  text-decoration: none;
-}
-#page_top a::before{
-  font-family: 'Font Awesome 5 Free';
-  font-weight: 900;
-  content: '\f102';
-  font-size: 25px;
-  color: #3f98ef;
-  position: absolute;
-  width: 25px;
-  height: 25px;
-  top: -40px;
-  bottom: 0;
-  right: 0;
-  left: 0;
-  margin: auto;
+  padding: 2px;
+  /* border-top-left-radius: 50%;
+  border-top-right-radius: 50%; */
+  width: 30%;
+  margin: 0;
+  border: solid 2px cornsilk;
+  line-height :1rem ;
   text-align: center;
-}
 
-
-.test {
-  width: 200px;
-  height: 200px;
-  background-color: rgb(224, 176, 117);
-  margin: 20px;
-  margin-left: auto;
-  margin-right: auto;
-  box-shadow: 0 0 40px rgb(19, 34, 172);
-}
-.test > img {
-  width: 200px;
-  height: 200px;
-  object-fit: cover;
-}
-
-
-
-
-.m3snap{
-  margin-top: 40px;
-  margin-left: auto;
-  margin-right: auto;
-  width: 200px;
-  height: 180px;
-}
-.m3snap >img {
-  width: 200px;
-  height: 180px;
-  object-fit: cover;
-}
-
-.m4snap {
-  margin-top: 30px;
-  margin-bottom:20px ;
-  margin-left: auto;
-  margin-right: auto;
- 
-  width:200px ;
-  height: 150px;
-  box-shadow: 0 0 30px olivedrab;
-}
-.m4snap > img {
-  width:200px ;
-  height: 150px;
-  object-fit: cover;
-}
-
-.img {
-  object-fit: cover;
-}
-img-x {
-  width: 90%;
-  object-fit: cover;
-}
-
-.pac {
-  display: flex;
-  width: 90%;
-  /* background-color: greenyellow; */
-  justify-content: space-between;
-  text-align: center;
-  margin-top: 10px;
-  margin-bottom: 10px;
-  margin-left: auto;
-  margin-right: auto;
-  padding: 0px;
-}
-.pac > button  {
-  margin: 4px;
-  width: 20px;
-  height: 20px;
-  border-radius: 50%;
-  background-color:rgb(50, 158, 207);
-  border: 2px solid rgb(80, 56, 3) ;
-  cursor: pointer;
-  color: white;
-  font: bold;
-  font-size: 10px;
-  box-shadow:  5px 5px 10px rgb(22, 40, 53);
   
 }
 
- .anofoot {
-  /* position: fixed;
-  bottom: 0; */
-  width: 90%;
-  margin-left: auto;
-  margin-right: auto;
-}
-.anofoot-p {
-  margin: 0 auto; 
-} 
-
-.show {
-  display: none;  
-}
-.active{
-  display: block;
-}
-
-
-.gre-content {
-  width: 90%;
-  overflow: scroll;
-  margin-top: 0;
-  margin-left: auto;
-  margin-right: auto;
-}
-#decla{
-  margin: 0;
-}
-
-
-#day {
-  text-align: right;
-}
-#sign {
-margin-left: 30px;
-margin-right: 20px;
-}
-
-footer > p {
-  font-size: 8px;
-  color: rgb(173, 171, 171) ;
-  text-align: center;
-  margin-top: 16px,16px,auto;
-}
-
-
-
-.tab.is-active{
-  background:#F000;
+.tab.is-active {
+  background-color:whitesmoke;
+  /* background:cyan; */
   color:darkorange;
   transition: all 0.2s ease-out;
 }
-.panel.is-show{
+.panel.is-show {
+
   display:block;
   justify-content: center;
 }
 
 
-@media (min-width: 800px){
-  .panel-group {
-    height: 1200px;
-  }
-  .panel {
-    height: 1200px;
-  }
+/* パネル１の部品 */
+#colle {
+  display: grid;
+  grid-template-columns: repeat(3,80px) ;
+  gap: 10px;
+  justify-content: center;
+  align-content: center;
+  padding: 0;
+  /* background-color:palevioletred  ; */
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
 
-  .chips {
-    display: grid;
-    grid-template-columns: repeat(4,180px) ;
-    gap: 32px;
-    justify-content: center;
-    padding: 0;
-   margin-top: 32px;
-   margin-bottom: 32px;
-  }
-  .sque {
-    width: 180px;
-    height: 180px;
-    margin: 0;
-    padding: 0;
-    list-style: none;
-    object-fit: cover;
+.chip img {
+  object-fit: cover;
+  width: 80px;
+  height: 80px;
+  /* background-color: pink; */
+}
+
+.chip {
+  margin: 0;
+  padding: 0;
+  width: 80px;
+  height: 80px;
+  object-fit: cover;
+}
+
+.link {
+  margin-top: 30px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+
+/* パネル２の部品 */
+#panel-2 {  
+  height: 95%;
+}
+ 
+#ivent{
+  height: 95%;
+}
+
+#screen {
+  /* background-color: rgb(215, 250, 246); */
+  width: 100%;
+  height: 250px;
+  margin-top: 10px;
+  margin-left: auto;
+  margin-right: auto; 
+  object-fit: cover;
+}
+
+#x0 {
+  /* background-color:plum; */
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+}
+
+.nav-btn {
+  display:flex;
+  justify-content: space-evenly;
+  margin-top: 8px;
+  margin-bottom: 8px;
+
+
+}
+
+button {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  box-shadow: 0px 5px 5px   rgb(85, 87, 87);
+  background-color: royalblue;
+}
+
+.btn-on {
+  box-shadow: none;
+  background-color: whitesmoke;
+}
+
+.show {
+  display: none;
+  /* background-color:skyblue; */
+  /* width: 100%; */
+  height:  calc(90% - 250px);
+  overflow-y: scroll;
+  padding: 10px;
   
-  }
-  .sque img {
-    object-fit: cover;
-    width: 180px;
-    height: 180px;
-  }
+}
 
-  .screen {
-    width: 80%;
-    height: 60%;
-    margin-bottom: 32px;
-    object-fit: cover;
-    margin-left: auto;
-    margin-right: auto;
-  }
-  
-  .desc {
-    width: 80%;
-  }
+.show-mini {
+  width: 100%;
+  margin-top: 20px;
+  margin-bottom: 50px;
+  margin-left: 10%;
+  margin-right: auto;
+  object-fit: cover;
+  justify-content: center;
+}
 
-  .tab-gre > P {
- font-size: 48px;
-  }
+img {
+  width: 80%;
+  object-fit: cover;
+
+}
+
+.active {
+  /* display: flex; */
+  display: block;
+}
+
+/* パネル３の部品 */
+#greet {
+  background-color:whitesmoke;
+  /* width: 100%; */
+  height: 90%; 
+  overflow-y: scroll;
+  padding: 10px;
 
 }
 
 
-
-@media (min-width: 1200px){
-
-  .panel-group {
-    height: 1200px;
-  }
-  .panel {
-    height: 1200px;
-  }
-
-  .chips {
-    display: grid;
-    grid-template-columns: repeat(4,200px) ;
-    gap: 32px;
-    justify-content: center;
-    padding: 0;
-   margin-top: 32px;
-   margin-bottom: 32px;
-  }
-  .sque {
-    width: 200px;
-    height: 200px;
-    margin: 0;
-    padding: 0;
-    list-style: none;
-    object-fit: cover;
+#day {
+  display: flex;
+  justify-content: flex-end;
+  margin:0 0 0 10px; 
   
-  }
-  .sque img {
-    object-fit: cover;
-    width: 200px;
-    height: 200px;
-  }
 
-  .screen {
-    width: 80%;
-    height: 60%;
-    margin-bottom: 32px;
-    object-fit: cover;
-    margin-left: auto;
-    margin-right: auto;
-  }
-  
-  .desc {
-    width: 80%;
-  }
-  .desc {
-    width: 90%;
-    height: 400px;
-    /* background-color:darksalmon;  */
-    margin: 4px auto;
-   overflow-y: scroll;
-  }
-  .test {
-    width: 400px;
-    height: 400px;
-    background-color: rgb(224, 176, 117);
-    margin: 40px;
-    margin-left: auto;
-    margin-right: auto;
-    box-shadow: 0 0 80px rgb(19, 34, 172);
-  }
-  .test > img {
-    width: 400px;
-    height: 400px;
-    object-fit: cover;
-  }
-  
-  .m3snap{
-    margin-top: 60px;
-    margin-left: auto;
-    margin-right: auto;
-    width: 400px;
-    height: 360px;
-  }
-  .m3snap >img {
-    width: 400px;
-    height: 360px;
-    object-fit: cover;
-  }
-  
-  .m4snap {
-    margin-top: 60px;
-    margin-bottom:40px ;
-    margin-left: auto;
-    margin-right: auto;
-   
-    width:400px ;
-    height: 300px;
-    box-shadow: 0 0 30px olivedrab;
-  }
-  .m4snap > img {
-    width:400px ;
-    height: 300px;
-    object-fit: cover;
-  }
-  
-  .tab-gre > P {
- width: 60%;   
- font-size: 36px;
-  }
-
-  #sign{
-    font-size: 20px;
-  }
-  .end {
-    display: block;
-
-  }
 }
+#day > p {
+  margin: 0px;
+}
+
+#sign {
+
+  padding-right: 10px;
+  padding-left: 10px;
+
+}
+
+
+/* iPadサイズ */
+/* パソコンサイズ */
