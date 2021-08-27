@@ -11,12 +11,13 @@ main {
   height: 100%;
   margin-left: auto;
   margin-right: auto;
+  margin-top: 10px;
 }
+
 
 p {
   padding: 10px;
   padding-top: 0;
-
 }
 
 footer {
@@ -36,12 +37,11 @@ footer > p  {
 nav {
   display: flex;
   background-color:rgb(224, 221, 221);
-  
   width: 90%; 
-  height: 6%;
+  margin-top: 8px;
   margin-left: auto;
   margin-right: auto;
-  justify-content: space-between;
+  justify-content:left
 
  
 }
@@ -52,6 +52,8 @@ nav {
   height:90%;
   margin-left: auto;
   margin-right: auto;
+  padding-top: 8px;
+
 }
 
 /* セクション*/
@@ -61,19 +63,22 @@ nav {
 /* 部品*/
 h2 {
   margin:8px;
+  margin-bottom: 16px;
   text-shadow: 10px 10px 5px rgb(45, 120, 170);
 }
 
 nav > li {
+  font-size: .8rem;
   color: royalblue;
   list-style: none;
   padding: 2px;
   /* border-top-left-radius: 50%;
   border-top-right-radius: 50%; */
-  width: 30%;
+  width: 25%;
   margin: 0;
-  border: solid 2px cornsilk;
-  line-height :1rem ;
+  border: solid 1px whitesmoke;
+  border-top-left-radius:15% ;
+  border-top-right-radius:15% ;
   text-align: center;
 
   
@@ -103,6 +108,8 @@ nav > li {
   /* background-color:palevioletred  ; */
   padding-top: 10px;
   padding-bottom: 10px;
+  margin-top: 8px;
+  margin-bottom: 8px;
 }
 
 .chip img {
@@ -133,6 +140,7 @@ nav > li {
 }
  
 #ivent{
+  margin-top: 16px;
   height: 95%; 
   justify-content: center;
 }
@@ -157,20 +165,22 @@ nav > li {
 
 .nav-btn {
   display:flex;
-  justify-content: space-evenly;
-  margin-top: 8px;
+  justify-content: center;
+  margin-top: 16px;
   margin-bottom: 8px;
+ 
 
 
 }
 
 button {
-  width: 20px;
-  height: 20px;
+  width: 16px;
+  height: 16px;
   border-radius: 50%;
   /* box-shadow: 0px 5px 5px   rgb(85, 87, 87); */
-  background-color: rgb(155, 157, 161);
+  background-color: rgba(155, 157, 161, 0.658);
   border: none;
+  margin-right: 16px;
 }
 
 .btn-on {
@@ -218,6 +228,7 @@ button {
   height: 90%; 
   overflow-y: scroll;
   padding: 10px;
+  padding-top: 0px;
 
 }
 
