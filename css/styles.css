@@ -181,7 +181,7 @@ button {
 .show {
   display: none;
   /* background-color:skyblue; */
-  /* width: 100%; */
+  width: 100%;
   height:  calc(90% - 250px);
   overflow-y: scroll;
   padding: 10px;
