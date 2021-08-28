@@ -3,6 +3,7 @@ html, body {
   background-color:rgb(224, 221, 221);
   width:100%;
   height:100%;
+  /* min-height: 100vh; */
 }
 /* 土台 */
 main {
@@ -15,10 +16,10 @@ main {
 }
 
 
-p {
+/* p {
   padding: 10px;
   padding-top: 0;
-}
+} */
 
 footer {
   padding: 0;
@@ -167,8 +168,6 @@ nav > li {
   margin-top: 16px;
   margin-bottom: 8px;
  
-
-
 }
 
 button {
@@ -189,10 +188,12 @@ button {
 .show {
   display: none;
   /* background-color:skyblue; */
-  width: 100%;
+  width: 75%;
   height:  calc(90% - 250px);
   overflow-y: scroll;
-  padding: 10px;
+  margin-left: auto;
+  margin-right: auto;
+ 
   
 }
 
@@ -203,20 +204,22 @@ button {
   margin-bottom: 50px;
   margin-left: auto;
   margin-right: auto;
-  justify-content: center;
+  /* justify-content: center; */
   object-fit: cover;
 
 }
 
 .show-mini > img {
-  width: 80%;
+  width: 100%;
   object-fit: cover;
 
 }
 
 .active {
   /* display: flex; */
-  display: block;
+  display: flex;
+  flex-direction: column;
+  
 }
 
 /* パネル３の部品 */
