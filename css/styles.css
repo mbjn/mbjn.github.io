@@ -91,11 +91,9 @@ nav > li {
   transition: all 0.2s ease-out;
 }
 .panel.is-show {
-
   display:block;
   justify-content: center;
 }
-
 
 /* パネル１の部品 */
 #colle {
