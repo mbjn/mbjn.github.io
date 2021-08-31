@@ -30,8 +30,8 @@ const btns = document.querySelectorAll('button');
 const imgs = [
    "img/m1.jpg",
    "img/m2.jpg",
-   "img/m3.jpg",
-   "img/m4.jpg",
+  //  "img/m3.jpg",
+  //  "img/m4.jpg",
    "img/m5.jpg",
   ];
 

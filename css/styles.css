@@ -15,7 +15,9 @@ main {
   margin-top: 10px;
 }
 
-
+img {
+  object-fit: cover;
+}
 /* p {
   padding: 10px;
   padding-top: 0;
@@ -134,6 +136,12 @@ nav > li {
 }
 
 /* パネル２の部品 */
+.test-box1 {
+  background-color: darkcyan;
+  width: 80%;
+  height: 15%;
+}
+
 #panel-2 {  
   height: 95%;
 }
@@ -178,6 +186,8 @@ button {
   background-color: rgba(137, 138, 141, 0.658);
   border: none;
   margin-right: 16px;
+  cursor: pointer;
+  
 }
 
 .btn-on {
