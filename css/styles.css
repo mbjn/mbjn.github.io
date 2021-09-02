@@ -26,12 +26,12 @@ img {
 footer {
   padding: 0;
   padding-bottom: 10px;
-
   font-size: 10px;
   color: rgb(104, 102, 102);
   text-align: center;
   vertical-align: text-top;
 }
+
 footer > p  {
   margin-top: 0;
 }
@@ -48,6 +48,7 @@ nav {
 
  
 }
+
 .panel {
   display:none;
   background-color:whitesmoke;
@@ -56,7 +57,6 @@ nav {
   margin-left: auto;
   margin-right: auto;
   padding-top: 8px;
-
 }
 
 /* セクション*/
@@ -64,6 +64,7 @@ nav {
 
 
 /* 部品*/
+
 h2 {
   margin:8px;
   margin-bottom: 16px;
@@ -82,9 +83,7 @@ nav > li {
   border: solid 1px whitesmoke;
   border-top-left-radius:15% ;
   border-top-right-radius:15% ;
-  text-align: center;
-
-  
+  text-align: center; 
 }
 
 .tab.is-active {
@@ -166,8 +165,7 @@ nav > li {
   /* background-color:plum; */
   width: 90%;
   height: 250px;
-  object-fit: cover;
-  
+  object-fit: cover; 
 }
 
 .nav-btn {
@@ -175,7 +173,6 @@ nav > li {
   justify-content: center;
   margin-top: 16px;
   margin-bottom: 8px;
- 
 }
 
 button {
@@ -187,7 +184,6 @@ button {
   border: none;
   margin-right: 16px;
   cursor: pointer;
-  
 }
 
 .btn-on {
@@ -199,37 +195,37 @@ button {
   display: none;
   /* background-color:skyblue; */
   width: 75%;
+  /* height: 30%; */
   height:  calc(90% - 250px);
   overflow-y: scroll;
   margin-left: auto;
   margin-right: auto;
- 
-  
+
 }
 
 .show-mini {
   display: flex;
   width: 100%;
+  /* height: 100%; */
   margin-top: 20px;
   margin-bottom: 50px;
   margin-left: auto;
   margin-right: auto;
   /* justify-content: center; */
   object-fit: cover;
-
 }
 
-.show-mini > img {
+.show-mini-img {
   width: 100%;
-  object-fit: cover;
+  /* height: 100%; */
 
+  object-fit: cover;
 }
 
 .active {
   /* display: flex; */
   display: flex;
   flex-direction: column;
-  
 }
 
 /* パネル３の部品 */
@@ -240,7 +236,6 @@ button {
   overflow-y: scroll;
   padding: 10px;
   padding-top: 0px;
-
 }
 
 #decla {
@@ -253,18 +248,15 @@ button {
   display: flex;
   justify-content: flex-end;
   margin:0 0 0 10px; 
-  
-
 }
+
 #day > p {
   margin: 0px;
 }
 
 #sign {
-
   padding-right: 10px;
   padding-left: 10px;
-
 }
 
 
