@@ -2,7 +2,7 @@
 html, body {
   background-color:rgb(224, 221, 221);
   width:100%;
-  height:100%;
+  height:auto;
   /* min-height: 100vh; */
 }
 /* 土台 */
@@ -33,7 +33,7 @@ footer {
 }
 
 footer > p  {
-  margin-top: 0;
+  margin-top: 10px;
 }
 
 /* パネル*/
@@ -95,6 +95,9 @@ nav > li {
 .panel.is-show {
   display:block;
   justify-content: center;
+  height: auto;
+  padding-bottom: 30px;
+ 
 }
 
 /* パネル１の部品 */
@@ -135,37 +138,52 @@ nav > li {
 }
 
 /* パネル２の部品 */
-.test-box1 {
+/* .test-box1 {
   background-color: darkcyan;
   width: 80%;
   height: 15%;
-}
+} */
 
 #panel-2 {  
-  height: 95%;
+  /* height: 95%; */
 }
  
 #ivent{
+  /* display:flex; */
+  margin-left: auto;
+  margin-right: auto;
   margin-top: 16px;
-  height: 95%; 
+  /* height: 95%;  */
   justify-content: center;
+  text-align: center;
+  
+
 }
 
 #screen {
   /* background-color: rgb(215, 250, 246); */
   display: flex;
-  width: 100%;
-  height: 250px;
+  width: 80%;
+  height: auto;
   margin-top: 10px;
   justify-content: center;
   object-fit: cover;
+  margin-left: auto;
+  margin-right:auto;
+}
+
+
+#screen > img {
+margin: auto;
 }
 
 #x0 {
   /* background-color:plum; */
   width: 90%;
-  height: 250px;
+  height: auto;
   object-fit: cover; 
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .nav-btn {
@@ -196,8 +214,8 @@ button {
   /* background-color:skyblue; */
   width: 75%;
   /* height: 30%; */
-  height:  calc(90% - 250px);
-  overflow-y: scroll;
+  /* height:  calc(90% - 250px); */
+  /* overflow-y: scroll; */
   margin-left: auto;
   margin-right: auto;
 
@@ -224,6 +242,12 @@ button {
   object-fit: cover;
 }
 
+.active > div {
+width: 100%;
+height: 50%;
+overflow: hidden;
+}
+
 .active {
   /* display: flex; */
   display: flex;
@@ -231,6 +255,11 @@ button {
 }
 
 /* パネル３の部品 */
+.gre-content {
+  display: flex;
+  justify-content: space-between;
+}
+
 #greet {
   background-color:whitesmoke;
   /* width: 100%; */
@@ -262,5 +291,81 @@ button {
 }
 
 
+#gree-comment {
+padding: 2rem;
+width: 90%;
+height: auto;
+box-shadow: 0 10px 10px rgb(104, 102, 102);
+margin: 1rem;
+margin-top: 20px;
+border: solid 1px rgb(104, 102, 102);
+
+}
+
+#gree {
+  display: flex;
+  justify-content: space-evenly;
+  text-align: center;
+  object-fit: cover;
+  width: 100%;
+  height: 100%; 
+  margin-right:2rem ;
+  margin-top: 5rem;
+  box-shadow: 0 10px 10px rgb(23, 60, 226);
+  opacity: 0.8;
+
+}
+#gree-img {
+  object-fit: cover;
+  width: 80%;
+  height: 80%;
+  box-shadow: 10px 10px 10px rgb(183, 211, 26);
+
+}
+
 /* iPadサイズ */
+  @media screen and (min-width: 600px) {
+    body {
+        /* color: blue; */
+    }
+
+    #colle {
+      display:grid;
+      /* grid-template-columns: repeat(4,200px) ; */
+      grid-template-columns: repeat(auto-fill, minmax(15rem, .5fr));
+      /* grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr)); */
+      gap: 3rem;
+      justify-content: center;
+      align-content: center;
+      text-align: center;
+      padding: 0;
+      /* background-color:palevioletred  ; */
+      padding-top: 10px;
+      padding-bottom: 10px;
+      margin: 3rem;
+      margin-top: 8px;
+      
+      object-fit:scale-down
+    }
+    
+    .chip img {
+      object-fit: cover;
+      width: 15rem;
+      height: 15rem;
+      /* background-color: pink; */
+    }
+    
+    .chip {
+      margin: 0;
+      padding: 0;
+      width: 15rem;
+      height: 15rem;
+      object-fit: cover;
+      text-align: center;
+    }
+
+
+} 
+  
+
 /* パソコンサイズ */
