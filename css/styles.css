@@ -153,7 +153,6 @@ nav > li {
   margin-left: auto;
   margin-right: auto;
   margin-top: 16px;
-  /* height: 95%;  */
   justify-content: center;
   text-align: center;
   
@@ -178,7 +177,6 @@ margin: auto;
 }
 
 #x0 {
-  /* background-color:plum; */
   width: 90%;
   height: auto;
   object-fit: cover; 
@@ -211,9 +209,7 @@ button {
 
 .show {
   display: none;
-  /* background-color:skyblue; */
   width: 75%;
-  /* height: 30%; */
   /* height:  calc(90% - 250px); */
   /* overflow-y: scroll; */
   margin-left: auto;
@@ -227,10 +223,8 @@ button {
   width: 100%;
   height:auto;
   margin-top: 20px;
-  margin-bottom: 50px;
   margin-left: auto;
   margin-right: auto;
-  /* justify-content: center; */
   object-fit: cover;
 }
 
@@ -293,6 +287,7 @@ overflow: hidden;
 
 #gree-comment {
 padding: 2rem;
+padding-top: 10px;
 width: 90%;
 height: auto;
 box-shadow: 0 10px 10px rgb(104, 102, 102);
@@ -331,8 +326,8 @@ border: solid 1px rgb(104, 102, 102);
 
     #colle {
       display:grid;
-      /* grid-template-columns: repeat(4,200px) ; */
-      grid-template-columns: repeat(auto-fill, minmax(15rem, .5fr));
+      /* grid-template-columns: repeat(4,180px) ; */
+      grid-template-columns: repeat(auto-fill, minmax(10rem, .2fr));
       /* grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr)); */
       gap: 3rem;
       justify-content: center;
@@ -342,7 +337,7 @@ border: solid 1px rgb(104, 102, 102);
       /* background-color:palevioletred  ; */
       padding-top: 10px;
       padding-bottom: 10px;
-      margin: 3rem;
+      margin: 1rem;
       margin-top: 8px;
       
       object-fit:scale-down
@@ -350,16 +345,16 @@ border: solid 1px rgb(104, 102, 102);
     
     .chip img {
       object-fit: cover;
-      width: 15rem;
-      height: 15rem;
+      width: 10rem;
+      height: 10rem;
       /* background-color: pink; */
     }
     
     .chip {
       margin: 0;
       padding: 0;
-      width: 15rem;
-      height: 15rem;
+      width: 10rem;
+      height: 10rem;
       object-fit: cover;
       text-align: center;
     }
