@@ -251,7 +251,7 @@ overflow: hidden;
 /* パネル３の部品 */
 .gre-content {
   display: flex;
-  justify-content: space-between;
+  justify-content:space-evenly;
 }
 
 #greet {
@@ -290,10 +290,10 @@ padding: 2rem;
 padding-top: 10px;
 width: 90%;
 height: auto;
-box-shadow: 0 10px 10px rgb(104, 102, 102);
+box-shadow: 0 8px 8px rgb(104, 102, 102);
 margin: 1rem;
 margin-top: 20px;
-border: solid 1px rgb(104, 102, 102);
+border: solid .5px rgb(104, 102, 102);
 
 }
 
