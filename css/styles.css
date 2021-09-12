@@ -144,9 +144,9 @@ nav > li {
   height: 15%;
 } */
 
-#panel-2 {  
+/* #panel-2 {  
   /* height: 95%; */
-}
+/* }  */
  
 #ivent{
   /* display:flex; */
@@ -177,7 +177,7 @@ margin: auto;
 }
 
 #x0 {
-  width: 90%;
+  width: 80%;
   height: auto;
   object-fit: cover; 
   margin-left: auto;
@@ -209,7 +209,7 @@ button {
 
 .show {
   display: none;
-  width: 75%;
+  width: 60%;
   /* height:  calc(90% - 250px); */
   /* overflow-y: scroll; */
   margin-left: auto;
@@ -320,9 +320,7 @@ border: solid .5px rgb(104, 102, 102);
 
 /* iPadサイズ */
   @media screen and (min-width: 600px) {
-    body {
-        /* color: blue; */
-    }
+    
 
     #colle {
       display:grid;
