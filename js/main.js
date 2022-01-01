@@ -29,10 +29,10 @@ const btns = document.querySelectorAll('button');
 
 const imgs = [
    "img/m1.jpg",
-   "img/m2.jpg",
+   "img/2022.1-1.jpg",
   //  "img/m3.jpg",
   //  "img/m4.jpg",
-   "img/m5.jpg",
+   "img/2022-01-5.jpg",
   ];
 
 // const shows =[
